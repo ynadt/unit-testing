@@ -46,11 +46,6 @@ web_modules/
 .env.local
 .env.*.local
 
-# Lockfiles (optional if using npm)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
-
 # IDE / Editor
 .idea/
 .vscode/
