@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "Practice Task 1 - Unit Testing with Mocha, Chai, ESLint, Babel, Husky, and c8 coverage",
+  "scripts": {
+    "test": "npx mocha --reporter mochawesome",
+    "coverage": "npx c8 --reporter=html npm test",
+    "eslint": "npx eslint .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.28.4",
+    "@babel/preset-env": "^7.28.3",
+    "c8": "^10.1.3",
+    "chai": "^6.2.0",
+    "eslint": "^9.37.0",
+    "eslint-plugin-mocha": "^11.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.4",
+    "mocha": "^11.7.4",
+    "mochawesome": "^7.1.4"
+  },
+  "dependencies": {
+    "globals": "^16.4.0"
+  }
+}
